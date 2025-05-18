@@ -1,6 +1,6 @@
 #first downloaded "rockyou.txt" from kaggle.
 
-import fun
+import session2.fun as fun
 
 with open("rockyou.txt", "r", encoding="latin-1") as file:
     lines = file.readlines()

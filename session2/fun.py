@@ -48,19 +48,19 @@ def countdigits(alist):
     return count
     
 # count how many start with 'A'
-def count_start_letter(alist, letter):
-    count = 0
-    for i in alist:
-        #if i[0] == letter:  
-        if i[0:len(letter)-1]==letter:  # this is better as it deals with case where >1 letter in 'letter'.
-            count += 1
-    return count
+#def count_start_letter(alist, letter):
+ #   count = 0
+  #  for i in alist:
+   #     #if i[0] == letter:  
+    #    if i[0:len(letter)-1]==letter:  # this is better as it deals with case where >1 letter in 'letter'.
+     #       count += 1
+    #return count
 # or another way would be:
 # count how many start with 'A'
 def count_start_letter(alist, letter):
     count = 0
     for i in alist:
-        if i.startswith(letter):  
+        if i.lower().startswith(letter):  
             count += 1
     return count
 
