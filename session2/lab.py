@@ -38,3 +38,4 @@ print(fun.countdigits(lines))
 
 # then:
 # Count how many items start with "A"
+# this is in the homework!
