@@ -100,7 +100,7 @@ Time complexity: O(n) — worst case limit is the amount of data
 Space Complexity: O(k) where k = limit (Youre storing limit values, not n)
 '''
 
-# From solutions: this was done similaly but backwards (is that more efficient?)
+# From solutions: this was done similarly but backwards (is that more efficient?)
 # as below:
 def head_col(alist,col,limit):
     return_data=[]
@@ -178,7 +178,7 @@ for item in lovemovies(netflix_data):
     lovemovies_list.append(item)
 print(len(lovemovies_list))
 
-# Finds all movies with a PG-13 rating.
+#8. Finds all movies with a PG-13 rating.
 #using return:
 def pg13movies(data):
     pg13list = []
@@ -222,5 +222,37 @@ def count_types(data):
 print(count_types(netflix_data))
 
 
-# Count Per Category
-# Generate a frequency table
+# 12. **Average TV show seasons**
+def avg_seasons(data):
+    count = 0
+    countseasons = 0
+    for row in data:
+        if row['type'].lower() == 'tv show':
+               seasons = int(row['duration'].split()[0])
+               count +=1
+               countseasons += seasons
+    return countseasons/count
+print(avg_seasons(netflix_data))
+#can this be done with yield? maybe not - I'm not sure. we only need to return the counts, not the values.
+
+#time complexity: 0(n)
+#space complexity: 0(1)
+
+#13. Sort by release year using `Bubble sort`.
+def sort_by_year(data, year):
+    n = len(data)
+    for i in range(n):
+        for j in range(0, n-1-i):
+            if data[j] > data[j + 1]:
+                data[j], data[j + 1] = data[j + 1], data[j]
+    return data
+
+
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-1-i):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
