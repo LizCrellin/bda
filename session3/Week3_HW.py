@@ -387,7 +387,8 @@ def sort_by_release_year(data): # no need to select a year! we are sorting by th
             if year_j > year_next:
                 sorted_data[j], sorted_data[j + 1] = sorted_data[j + 1], sorted_data[j]
     
-    return [row['title'] for row in sorted_data]  # more likely implementation, with title only.
+    return [row['title'] for row in sorted_data]  
+print(sort_by_release_year(netflix_data)[:5])
 
 #From solutions:
 '''
