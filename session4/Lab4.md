@@ -74,7 +74,7 @@ def load_csv_from_dict(input_dict):
 *Usage example*
 
 ```python
-input_data = {"data": "netflix_titlses.csv"}
+input_data = {"data": "netflix_titles.csv"}
 rows = load_csv_from_dict(input_data)
 
 for row in rows:
