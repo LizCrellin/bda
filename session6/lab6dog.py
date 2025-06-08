@@ -1,4 +1,4 @@
-'''import requests, os
+import requests, os
 
 def fetch_and_save_dog_image(index):
     url = "https://dog.ceo/api/breeds/image/random"
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 import threading, requests, os, time
 
-semaphore = threading.Semaphore(2)   # this is where we are limiting to 2 at a time.'''
+semaphore = threading.Semaphore(2)   # this is where we are limiting to 2 at a time.
 
 '''def fetch_and_save_dog_image_semaphore(index, semaphore):  #  no need for this, do it in the parallel runner function
     url = "https://dog.ceo/api/breeds/image/random"
@@ -91,6 +91,7 @@ semaphore = threading.Semaphore(2)   # this is where we are limiting to 2 at a t
     else:
         print(f"[{index}] Failed to fetch dog image.")'''
 
+import requests, os, time
 
 # Parallel thread runner - semaphore
 import concurrent.futures, threading, requests, os, time
