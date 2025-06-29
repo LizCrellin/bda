@@ -43,7 +43,7 @@ def parallel_runner2(secs):
     for p in processes:
         p.join()
     end=time.perf_counter()
-    print(f'Serial: {end-start} second(s)')
+    print(f'Parallel: {end-start} second(s)')   # changed 'serial' to 'parallel' here
 
 if __name__ == '__main__':
     secs = [1,2,3]
