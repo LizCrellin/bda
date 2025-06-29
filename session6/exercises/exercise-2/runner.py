@@ -17,7 +17,7 @@ def load_txt_to_tuples(file_path):
 
 
 def main():
-    data = load_txt_to_tuples('data_small.txt')
+    data = load_txt_to_tuples('session6/exercises/exercise-2/data_small.txt')
     print("Data is loaded")
     t1 = time.perf_counter()
     for i in data:

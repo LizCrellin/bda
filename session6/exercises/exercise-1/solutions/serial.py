@@ -1,7 +1,7 @@
 from tools import *
 import time
 
-img_urls = load_data('image_urls.txt')
+img_urls = load_data('session6/exercises/exercise-1/image_urls.txt')
 
 t1 = time.perf_counter()
 

@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
 import time, threading
 
-def boo():
+def boo(secs):
     print("In boo...")
     print("Running...")
     time.sleep(secs)
@@ -67,7 +67,7 @@ def parallel_runner_f(secs):  # secs is a list [1,2,3,4,,,]
     return end - start
 
 if __name__ == '__main__':
-    print("Serial", serial_runner([1,2]))
+    print("Serial", serial_runner())
     print("Parallel", parallel_runner_f([1,2]))
 
 

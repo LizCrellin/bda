@@ -116,4 +116,4 @@ def parallel_runner_dog_limit2(indexes):
 
 
 if __name__ == "__main__":
-    print("Parallel", parallel_runner_dog_limit2([0,1,2,3]))
+    print("Parallel_semaphore:", parallel_runner_dog_limit2([0,1,2,3]))
