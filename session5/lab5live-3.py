@@ -21,7 +21,7 @@ def parallel_runner(secs):
     with concurrent.futures.ProcessPoolExecutor() as executor:
         executor.map(boo, secs)
     end = time.perf_counter()
-    print(f"Parallel runner{end-start}")
+    print(f"Parallel runner: {end-start} seconds")
 
 
 if __name__ == '__main__':
