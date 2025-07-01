@@ -2,20 +2,20 @@
 
 1. Register at: https://supabase.com/ and log in. Complete your name if you like.
 
-![Screenshot 2025-06-30 at 13.48.13](/Users/steliossotiriadis/Desktop/Screenshot 2025-06-30 at 13.48.13.png)
+![s1](assets/s1.png)
 
 2. Create a password.
 
-![Screenshot 2025-06-30 at 13.48.54](/Users/steliossotiriadis/Desktop/Screenshot 2025-06-30 at 13.48.54.png)
+![Screenshot 2025-06-30 at 13.48.54](assets/s2.png)
 
 3. You are ready!
 
-![Screenshot 2025-06-30 at 13.49.23](/Users/steliossotiriadis/Desktop/Screenshot 2025-06-30 at 13.49.23.png)
+![Screenshot 2025-06-30 at 13.49.23](assets/s3.png)
 
 4. Create a new table, I called it `test` and default fields.
 5. Go to Authentication and polciies click `Disable RLS`
 
-![Screenshot 2025-06-30 at 14.02.15](/Users/steliossotiriadis/Desktop/Screenshot 2025-06-30 at 14.02.15.png)
+![Screenshot 2025-06-30 at 14.02.15](assets/s4.png)
 
 6. Open VSC and create a new project.
 7. Create a new `venv`
@@ -24,7 +24,7 @@
 python -m venv venv
 
 - Mac: source venv/bin/activate
-- Windows: venv\Scripts\activate
+- Windows: venv\Scripts\activate 
 
 pip3 install supabase
 ```
@@ -32,11 +32,11 @@ pip3 install supabase
 8. Go back to `supabase` and locate your API key in the `Project settings` and `API keys`.
    * You will need to use the `anon` `public` key. 
 
-![image-20250630140757632](/Users/steliossotiriadis/Library/Application Support/typora-user-images/image-20250630140757632.png)
+![image-20250630140757632](assets/s5.png)
 
 8. Check your supabase URL and find out your URI.
 
-![image-20250630140928931](/Users/steliossotiriadis/Library/Application Support/typora-user-images/image-20250630140928931.png)
+![image-20250630140928931](assets/s6.png)
 
 8. Find your test table and insert yoru first row.
 9. Run the following script.
